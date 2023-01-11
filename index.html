@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Displays the scoreboard -->
+    <nav class="scoreboard">
+        <button class="button" id="viewScoreBtn">View Highscore</button>
+        <p id="timeDisplay">⏰ Timer:<span id="timerCount">0</span></p>
+        <p id="quizOver" style="display: none">Quiz over!</p>
+    </nav>
+
+    <section class="quiz">
+
+        <!-- Displays start button -->
+        <div id="startSection">
+            <h1>Javascript Quiz Challenge</h1>
+            <p id="description">Let's put your understanding of JavaScript's basics to the test! Try to respond to the following questions about codes in the allotted time. Remember that every incorrect answer reduces your time by ten seconds!</p>
+            <button  id="start-button">Start Quiz</button>
+        </div>
+
+        <!-- Displays quiz questions and answers -->
+        <div id="questionSection" style="display: none"> 
+            <h1 id="questionTitle">Quesion</h1>
+            <div id="answerList">
+                <button class="button" id="btn0">Answer 1</button>
+                <button class="button" id="btn1">Answer 2</button>
+                <button class="button" id="btn2">Answer 3</button>
+                <button class="button" id="btn3">Answer 4</button>
+            <hr id="divider">
+                <p id="selection" style="display: none;">Grade</p>
+            </div>
+        </div>
+    
+        <!-- Displays the Final score -->
+        <div id="submitSection" style="display: none">
+            <form>
+                <h2>Final Score: <span id="score"></span></h2>
+                <p>Enter Inititals: <input id="initials" placeholder="Enter initials">
+                <button class="button" id="submitInitial">submit</button>
+                </p>
+            </form>
+        </div>
+       
+        
+        <!-- Displays the high score -->
+        <div id="HighScoreSection" style="display: none">
+            <h2>High scores:</h2>
+            <div id="scoreList"></div>
+            <!-- appends list of player scores -->
+            <hr id="divider">
+            <div>
+                <button class="button" id="backBtn">Go back</button>
+                <button class="button" id="clearBtn">Clear Scores</button>
+            </div>
+        </div>
+
+    </section>
+  <script src="Assets/js/script.js"></script>
+</body>
+</html>
